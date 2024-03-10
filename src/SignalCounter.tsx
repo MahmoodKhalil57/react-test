@@ -1,4 +1,4 @@
-import { Signal, signal, useSignal } from "@preact/signals-react"
+import { Signal, signal } from "@preact/signals-react"
 
 const bindInput = <T extends Signal>(signal: T): React.InputHTMLAttributes<HTMLInputElement> => {
   type SignalType = T extends Signal<infer U> ? U : never
